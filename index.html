@@ -20,8 +20,12 @@
         <input type="text" @keyup='updateName'>
         <input type="text" @keypress="updateName">
         <input type="text" v-model='name'>
-        <hr>
         <button @click.alt="something">alt-click me</button>
+        <hr>
+        <h5 v-if="showname">This is the toggle data</h5>
+        <h5 v-else-if="showage">This is toggle elif condition</h5>
+        <button @click="toggleName">toggle case: {{showname}} </button>
+        <button @click="toggleAge">toggle case: {{showage}} </button>
     </div>
     <script src="app.js"></script>
 </body>

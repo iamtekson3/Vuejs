@@ -9,7 +9,9 @@ new Vue({
         coordinate: {
             x: 0,
             y: 0
-        }
+        },
+        showname: false,
+        showage: true,
     },
     methods:{
         greet(time) {
@@ -25,9 +27,14 @@ new Vue({
         updateName(e) {
             this.name = e.target.value
         },
-
         something(){
             console.log("Hello World!")
+        },
+        toggleName() {
+            this.showname = !this.showname
+        },
+        toggleAge() {
+            this.showage = !this.showage
         }
     }
 })
