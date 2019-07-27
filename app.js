@@ -21,6 +21,9 @@ new Vue({
         getCoords(e) {
             this.coordinate.x = e.offsetX
             this.coordinate.y = e.offsetY
+        },
+        updateName(e) {
+            this.name = e.target.value
         }
     }
 })

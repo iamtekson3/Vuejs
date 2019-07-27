@@ -17,6 +17,9 @@
         <button v-on:click="increase(1)">Increase by $1</button>
         <button @dblClick="increase(5)">Increase by $5</button>
         <div class="canvas" @mousemove="getCoords"> {{ coordinate.x }}, {{ coordinate.y }} </div>
+        <input type="text" @keyup='updateName'>
+        <input type="text" @keypress="updateName">
+        <input type="text" v-model='name'>
     </div>
     <script src="app.js"></script>
 </body>
