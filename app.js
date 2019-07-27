@@ -24,6 +24,10 @@ new Vue({
         },
         updateName(e) {
             this.name = e.target.value
+        },
+
+        something(){
+            console.log("Hello World!")
         }
     }
 })
