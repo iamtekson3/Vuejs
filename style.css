@@ -1,0 +1,12 @@
+.one{
+    color: green;
+}
+.two{
+    text-decoration: line-through;
+}
+.canvas {
+    margin: 10px;
+    width: 600px;
+    height: 200px;
+    background: #aaa;
+}
