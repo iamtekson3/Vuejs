@@ -2,12 +2,23 @@
 <head>
     <title>Vue Basic</title>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+    <style>
+    .one{
+        color: green;
+    }
+    .two{
+        text-decoration: line-through;
+    }
+    </style>
 </head>
 <body>
     <h2>Vue Basic</h2>
     <div id='app'>
         <h2>{{ title }}</h2>
         <p>{{ greet('morning') }}</p>
+        <a v-bind:href="url">Tekson</a> <!--we can use v-bind: or just : to dynamically add the contents-->
+        <p :class="classes">This is the text styled by vue</p>
+        <input type="text" :value="name">
     </div>
     <script src="app.js"></script>
 </body>
