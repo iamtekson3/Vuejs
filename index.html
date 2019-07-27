@@ -2,14 +2,7 @@
 <head>
     <title>Vue Basic</title>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
-    <style>
-    .one{
-        color: green;
-    }
-    .two{
-        text-decoration: line-through;
-    }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h2>Vue Basic</h2>
@@ -22,6 +15,8 @@
         <hr>
         <p>You earn {{ wage }} per hr. </p>
         <button v-on:click="increase(1)">Increase by $1</button>
+        <button @dblClick="increase(5)">Increase by $5</button>
+        <div class="canvas" @mousemove="getCoords"> {{ coordinate.x }}, {{ coordinate.y }} </div>
     </div>
     <script src="app.js"></script>
 </body>

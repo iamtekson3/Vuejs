@@ -6,6 +6,10 @@ new Vue({
         name: 'Kamal Kshetri',
         url: 'http://tekkshetri.com.np',
         classes: ["one", 'two'],
+        coordinate: {
+            x: 0,
+            y: 0
+        }
     },
     methods:{
         greet(time) {
@@ -13,6 +17,10 @@ new Vue({
         },
         increase(amount) {
             this.wage += amount
+        },
+        getCoords(e) {
+            this.coordinate.x = e.offsetX
+            this.coordinate.y = e.offsetY
         }
     }
 })
