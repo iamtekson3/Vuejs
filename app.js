@@ -7,12 +7,12 @@ new Vue({
         url: 'http://tekkshetri.com.np',
         classes: ["one", 'two'],
     },
-    method:{
+    methods:{
         greet(time) {
-            return `Hello ${this.name}, Good ${this.time}`
+            return `Hello ${this.name}, Good ${time}`
         },
         increase(amount) {
-            wage += amount
+            this.wage += amount
         }
     }
 })
