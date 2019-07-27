@@ -12,6 +12,12 @@ new Vue({
         },
         showname: false,
         showage: true,
+        items: ['first', 'second', 'third', 'fourth', 'fifth'],
+        objectItems: [
+            {name: 'kamal', age: 40, clz: 'wrc'},
+            {name: 'Pramod', age: 23, clz: 'motherland'},
+            {name: 'Dhiraj', age: 42, clz: 'jmc'},
+        ]
     },
     methods:{
         greet(time) {

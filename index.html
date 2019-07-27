@@ -26,6 +26,18 @@
         <h5 v-else-if="showage">This is toggle elif condition</h5>
         <button @click="toggleName">toggle case: {{showname}} </button>
         <button @click="toggleAge">toggle case: {{showage}} </button>
+        <hr>
+        <hr>
+        
+        <ul>
+            <li v-for="item in items">{{ item }}</li>
+        </ul>
+
+        <div v-for="(object, index) in objectItems">
+            <span>{{index}} {{ object.name}} </span>
+            <span>{{object.age}} </span>
+            <span>{{object.clz}} </span>
+        </div>
     </div>
     <script src="app.js"></script>
 </body>
